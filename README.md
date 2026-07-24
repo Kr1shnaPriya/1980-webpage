@@ -1,6 +1,7 @@
 # 1980's — A Nostalgic Restaurant — Website
 
 ## Structure
+
 ```
 frontend/        static site (HTML/CSS/JS)
   index.html
@@ -13,19 +14,24 @@ backend/          express server, serves frontend + /api/contact
 ```
 
 ## Run it
+
 ```bash
 cd backend
 npm install
 npm start
 ```
+
 Open http://localhost:3000
 
 ## Add your photos
+
 Read `frontend/images/README.txt` — drop files with the exact names listed
-(logo.png, hero-exterior.jpg, dish-*.jpg, guest-*.jpg, gallery-*.jpg).
+(`logo.png`, `hero-exterior.jpg`, `dish-*.jpg`, `guest-*.jpg`, `gallery-*.jpg`).
+
 Placeholders show automatically until then; nothing breaks.
 
 ## Notes
+
 - No booking system, on purpose.
 - Contact form (if you wire one up) posts to `/api/contact`, logged to `backend/contact-messages.json`.
 - Update phone / Instagram / email / addresses directly in `index.html` under `#contact`.
