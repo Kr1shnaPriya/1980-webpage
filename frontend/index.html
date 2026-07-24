@@ -1,294 +1,574 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>1980's — A Nostalgic Restaurant</title>
-<meta name="description" content="1980's — A Nostalgic Restaurant. Kerala's forgotten flavours, the charm of the 1980s, and the warmth of home.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<!-- ============ SPLASH ============ -->
-<div id="splash">
-  <div class="splash-badge">
-    <!-- Drop your logo file at images/logo.png — falls back to text mark below -->
-    <img src="images/logo.jpg" alt="1980's logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-    <div class="fallback-mark" style="display:none; flex-direction:column; align-items:center;">
-      1980's
-      <span class="fallback-sub">A Nostalgic Restaurant</span>
-    </div>
-  </div>
-</div>
-
-<!-- ============ NAV ============ -->
-<header class="nav">
-  <a href="#top" class="nav-logo">
-    <span class="ring">80's</span>
-    1980's
-  </a>
-  <button class="nav-toggle" id="navToggle">MENU</button>
-  <nav class="nav-links" id="navLinks">
-    <a href="#story">Our Story</a>
-    <a href="#recipes">Recipe Stories</a>
-    <a href="#guests">Guest Wall</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#menu">Menu</a>
-    <a href="#contact">Find Us</a>
-  </nav>
-</header>
-
-<!-- ============ HERO ============ -->
-<section class="hero" id="top">
-  <img class="hero-photo" src="images/hero-exterior.jpg" alt="" onerror="this.style.opacity=0;">
-  <div class="hero-inner">
-    <span class="eyebrow">Est. 1980's</span>
-    <h1>Taste of&nbsp;Memories</h1>
-    <p class="sub">Where the flavours of Kerala, the charm of the 1980s, and the warmth of home come together.</p>
-    <div class="scroll-cue">Scroll</div>
-  </div>
-</section>
-
-<!-- ============ OUR STORY ============ -->
-<section class="section" id="story">
-  <div class="story reveal">
-    <div class="story-photo">
-      <img src="images/story-house.jpg" alt="1980's restaurant entrance" onerror="this.parentElement.innerHTML='<div class=ph>Restaurant Entrance Photo</div>'">
-    </div>
-    <div class="story-text">
-      <span class="eyebrow">Explore Our Story</span>
-      <h2>A House That Remembers</h2>
-      <p>Long before it was a restaurant, this was the idea of a home — wooden rafters, red oxide floors, a kitchen where nothing was ever rushed. 1980's was built to hold on to that feeling: no wifi, no hurry, just good food and good company, the way meals used to be.</p>
-      <p>Every dish on our table is cooked the way our grandmothers cooked — ground on stone, simmered in clay, wrapped in banana leaf. We didn't want to modernise the taste of Kerala. We wanted to protect it.</p>
-      <p class="story-quote">"We don't have wifi. Talk to each other. Pretend it's 1980's."</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ RECIPE STORIES ============ -->
-<section class="section" id="recipes" style="background:var(--cream-deep);">
-  <div class="section-head reveal">
-    <span class="eyebrow">The Stories Our Recipes Carry</span>
-    <h2>The Stories Behind Our Timeless Recipes</h2>
-    <p>Every recipe here has a memory attached to it. Here are a few worth knowing before you eat.</p>
-  </div>
-
-  <div class="recipe-grid reveal">
-
-    <article class="recipe-card">
-      <div class="recipe-photo">
-        <img src="images/dish-chattichoru.jpg" alt="Chattichoru" onerror="this.parentElement.innerHTML='<div class=ph>Chattichoru</div>'">
-        <span class="recipe-num">01 · Rice &amp; Curries</span>
-      </div>
-      <div class="recipe-body">
-        <h3>Chattichoru</h3>
-        <p>A comforting combination of fragrant rice, soulful curries, and cherished side dishes, brought together in one humble chatti. Rooted in the simple joy of sharing food, every spoonful carries the taste of Kerala's rich culinary heritage.</p>
-      </div>
-    </article>
-
-    <article class="recipe-card">
-      <div class="recipe-photo">
-        <img src="images/dish-sadhya.jpg" alt="Sadhya" onerror="this.parentElement.innerHTML='<div class=ph>Sadhya</div>'">
-        <span class="recipe-num">02 · The Grand Feast</span>
-      </div>
-      <div class="recipe-body">
-        <h3>Sadhya</h3>
-        <p>A grand feast of Kerala, where every dish is a celebration of tradition, togetherness, and the timeless flavours passed down through generations.</p>
-      </div>
-    </article>
-
-    <article class="recipe-card">
-      <div class="recipe-photo">
-        <img src="images/dish-pollichathu.jpg" alt="Fish Pollichathu" onerror="this.parentElement.innerHTML='<div class=ph>Fish Pollichathu</div>'">
-        <span class="recipe-num">03 · From the Malabar Coast</span>
-      </div>
-      <div class="recipe-body">
-        <h3>Fish Pollichathu</h3>
-        <p>A timeless Kerala delicacy — fresh fish wrapped in fragrant banana leaves and gently cooked with aromatic spices, capturing the soul of Malabar in every bite.</p>
-      </div>
-    </article>
-
-    <article class="recipe-card">
-      <div class="recipe-photo">
-        <img src="images/dish-biriyani.jpg" alt="Biriyani" onerror="this.parentElement.innerHTML='<div class=ph>Biriyani</div>'">
-        <span class="recipe-num">04 · Spice &amp; Slow Fire</span>
-      </div>
-      <div class="recipe-body">
-        <h3>Biriyani</h3>
-        <p>A fragrant celebration of spices, tender meat, and perfectly cooked rice — bringing together generations of flavour in every irresistible bite.</p>
-      </div>
-    </article>
-
-    <article class="recipe-card">
-      <div class="recipe-photo">
-        <img src="images/dish-elaada.jpg" alt="Ela Ada" onerror="this.parentElement.innerHTML='<div class=ph>Ela Ada</div>'">
-        <span class="recipe-num">05 · Sweet Endings</span>
-      </div>
-      <div class="recipe-body">
-        <h3>Ela Ada</h3>
-        <p>A cherished Kerala sweet, wrapped in tender banana leaves and filled with coconut and jaggery, carrying the comforting taste of tradition in every bite.</p>
-      </div>
-    </article>
-
-    <article class="recipe-card">
-      <div class="recipe-photo">
-        <img src="images/dish-pazhampori.jpg" alt="Pazham Pori" onerror="this.parentElement.innerHTML='<div class=ph>Pazham Pori</div>'">
-        <span class="recipe-num">06 · Tea-Time Classic</span>
-      </div>
-      <div class="recipe-body">
-        <h3>Pazham Pori</h3>
-        <p>A beloved Kerala tea-time classic, where sweet, ripe bananas meet a golden, crispy batter — evoking the warmth and simplicity of cherished childhood memories.</p>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- ============ GUEST WALL / TESTIMONIALS ============ -->
-<section class="section" id="guests">
-  <div class="section-head reveal">
-    <span class="eyebrow">Say Hi</span>
-    <h2>Our Visitors</h2>
-    <p>Familiar faces who stopped by and left a little bit of nostalgia behind.</p>
-  </div>
-
-  <div class="guest-strip reveal">
-    <div class="guest-card">
-      <div class="photo"><img src="images/guest-1.jpg" alt="Guest" onerror="this.parentElement.innerHTML='<div class=ph>Guest Photo 1</div>'"></div>
-      <div class="cap"><div class="name">Guest Name</div><div class="quote">"Felt like coming home."</div></div>
-    </div>
-    <div class="guest-card">
-      <div class="photo"><img src="images/guest-2.jpg" alt="Guest" onerror="this.parentElement.innerHTML='<div class=ph>Guest Photo 2</div>'"></div>
-      <div class="cap"><div class="name">Guest Name</div><div class="quote">"Every bite, a memory."</div></div>
-    </div>
-    <div class="guest-card">
-      <div class="photo"><img src="images/guest-3.jpg" alt="Guest" onerror="this.parentElement.innerHTML='<div class=ph>Guest Photo 3</div>'"></div>
-      <div class="cap"><div class="name">Guest Name</div><div class="quote">"Good food, good mood."</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ GALLERY ============ -->
-<section class="section" id="gallery" style="background:var(--cream-deep);">
-  <div class="section-head reveal">
-    <span class="eyebrow">A Look Inside</span>
-    <h2>Gallery</h2>
-    <p>Wood, brass light, banana leaf, and everything in between.</p>
-  </div>
-  <div class="masonry reveal">
-    <div class="tile"><img src="images/gallery-1.jpg" alt="" onerror="this.parentElement.innerHTML='<div class=ph style=aspect-ratio:4/5>Gallery Photo</div>'"></div>
-    <div class="tile"><img src="images/gallery-2.jpg" alt="" onerror="this.parentElement.innerHTML='<div class=ph style=aspect-ratio:1/1>Gallery Photo</div>'"></div>
-    <div class="tile"><img src="images/gallery-3.jpg" alt="" onerror="this.parentElement.innerHTML='<div class=ph style=aspect-ratio:3/4>Gallery Photo</div>'"></div>
-    <div class="tile"><img src="images/gallery-4.jpg" alt="" onerror="this.parentElement.innerHTML='<div class=ph style=aspect-ratio:4/3>Gallery Photo</div>'"></div>
-    <div class="tile"><img src="images/gallery-5.jpg" alt="" onerror="this.parentElement.innerHTML='<div class=ph style=aspect-ratio:1/1>Gallery Photo</div>'"></div>
-    <div class="tile"><img src="images/gallery-6.jpg" alt="" onerror="this.parentElement.innerHTML='<div class=ph style=aspect-ratio:4/5>Gallery Photo</div>'"></div>
-    <div class="tile"><img src="images/gallery-7.jpg" alt="" onerror="this.parentElement.innerHTML='<div class=ph style=aspect-ratio:3/4>Gallery Photo</div>'"></div>
-    <div class="tile"><img src="images/gallery-8.jpg" alt="" onerror="this.parentElement.innerHTML='<div class=ph style=aspect-ratio:4/3>Gallery Photo</div>'"></div>
-  </div>
-</section>
-
-<!-- ============ MENU ============ -->
-<section class="section" id="menu">
-  <div class="section-head reveal">
-    <span class="eyebrow">Bhakshana Vilavivarapattika</span>
-    <h2>Our Menu</h2>
-    <p>A menu written the way it always was — no prices, just the promise of good food.</p>
-  </div>
-
-  <div class="reveal">
-    <div class="menu-tabs">
-      <button class="menu-tab active" data-tab="mains">Mains &amp; Rice</button>
-      <button class="menu-tab" data-tab="grills">Grills &amp; Fry</button>
-      <button class="menu-tab" data-tab="breads">Breads &amp; Sides</button>
-      <button class="menu-tab" data-tab="sweets">Tea Time &amp; Sweets</button>
-    </div>
-
-    <div class="menu-panel active" id="mains">
-      <div class="menu-list">
-        <div class="menu-item"><span class="mname">Chattichoru</span><span class="mtag">Signature</span></div>
-        <div class="menu-item"><span class="mname">Sadhya</span><span class="mtag">On Request</span></div>
-        <div class="menu-item"><span class="mname">Chatti Biriyani</span><span class="mtag">Today's Special</span></div>
-        <div class="menu-item"><span class="mname">Pollicha Biriyani</span><span class="mtag">Today's Special</span></div>
-        <div class="menu-item"><span class="mname">Chatti Chora</span><span class="mtag">Today's Special</span></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1980's — A Nostalgic Restaurant</title>
+    <meta
+      name="description"
+      content="1980's — A Nostalgic Restaurant. Kerala's forgotten flavours, the charm of the 1980s, and the warmth of home."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============ SPLASH ============ -->
+    <div id="splash">
+      <div class="splash-badge">
+        <!-- Drop your logo file at images/logo.png — falls back to text mark below -->
+        <img
+          src="images/logo.jpg"
+          alt="1980's logo"
+          onerror="
+            this.style.display = 'none';
+            this.nextElementSibling.style.display = 'flex';
+          "
+        />
+        <div
+          class="fallback-mark"
+          style="display: none; flex-direction: column; align-items: center"
+        >
+          1980's
+          <span class="fallback-sub">A Nostalgic Restaurant</span>
+        </div>
       </div>
     </div>
 
-    <div class="menu-panel" id="grills">
-      <div class="menu-list">
-        <div class="menu-item"><span class="mname">Fish Pollichathu</span><span class="mtag">Malabar Coast</span></div>
-        <div class="menu-item"><span class="mname">Chicken Kanthari</span><span class="mtag">Today's Special</span></div>
-        <div class="menu-item"><span class="mname">Chicken Kondattam</span><span class="mtag">Today's Special</span></div>
-      </div>
-    </div>
+    <!-- ============ NAV ============ -->
+    <header class="nav">
+      <a href="#top" class="nav-logo">
+        <span class="ring">80's</span>
+        1980's
+      </a>
+      <button class="nav-toggle" id="navToggle">MENU</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#story">Our Story</a>
+        <a href="#recipes">Recipe Stories</a>
+        <a href="#guests">Guest Wall</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Find Us</a>
+      </nav>
+    </header>
 
-    <div class="menu-panel" id="breads">
-      <div class="menu-list">
-        <div class="menu-item"><span class="mname">Paal Porotta</span><span class="mtag">Fresh Baked</span></div>
-        <div class="menu-item"><span class="mname">Puttu &amp; Pathiri</span><span class="mtag">Fresh Baked</span></div>
-        <div class="menu-item"><span class="mname">Kizhi Porotta</span><span class="mtag">Steamed</span></div>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <img
+        class="hero-photo"
+        src="images/hero-exterior.jpg"
+        alt=""
+        onerror="this.style.opacity = 0"
+      />
+      <div class="hero-inner">
+        <span class="eyebrow">Est. 1980's</span>
+        <h1>Taste of&nbsp;Memories</h1>
+        <p class="sub">
+          Where the flavours of Kerala, the charm of the 1980s, and the warmth
+          of home come together.
+        </p>
+        <div class="scroll-cue">Scroll</div>
       </div>
-    </div>
+    </section>
 
-    <div class="menu-panel" id="sweets">
-      <div class="menu-list">
-        <div class="menu-item"><span class="mname">Ela Ada</span><span class="mtag">Banana Leaf Sweet</span></div>
-        <div class="menu-item"><span class="mname">Pazham Pori</span><span class="mtag">Tea-Time Classic</span></div>
-        <div class="menu-item"><span class="mname">1980's Chai</span><span class="mtag">House Brew</span></div>
+    <!-- ============ OUR STORY ============ -->
+    <section class="section" id="story">
+      <div class="story reveal">
+        <div class="story-photo">
+          <img
+            src="images/story-house.jpg"
+            alt="1980's restaurant entrance"
+            onerror="
+              this.parentElement.innerHTML =
+                '<div class=ph>Restaurant Entrance Photo</div>'
+            "
+          />
+        </div>
+        <div class="story-text">
+          <span class="eyebrow">Explore Our Story</span>
+          <h2>A House That Remembers</h2>
+          <p>
+            Long before it was a restaurant, this was the idea of a home —
+            wooden rafters, red oxide floors, a kitchen where nothing was ever
+            rushed. 1980's was built to hold on to that feeling: no wifi, no
+            hurry, just good food and good company, the way meals used to be.
+          </p>
+          <p>
+            Every dish on our table is cooked the way our grandmothers cooked —
+            ground on stone, simmered in clay, wrapped in banana leaf. We didn't
+            want to modernise the taste of Kerala. We wanted to protect it.
+          </p>
+          <p class="story-quote">
+            "We don't have wifi. Talk to each other. Pretend it's 1980's."
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <p class="menu-note">Full menu available in-house. Ask our staff for today's specials, written fresh on the chalkboard.</p>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="section" id="contact" style="background:var(--cream-deep);">
-  <div class="section-head reveal">
-    <span class="eyebrow">Find Us</span>
-    <h2>Come, Sit With Us</h2>
-    <p>Four homes, one memory. Choose the one nearest to you.</p>
-  </div>
-
-  <div class="contact-wrap reveal">
-    <div class="locations">
-      <div class="loc-card">
-        <h4>Kalpetta, Wayanad</h4>
-        <p>1980's — A Nostalgic Restaurant, Kalpetta, Kerala, India</p>
+    <!-- ============ RECIPE STORIES ============ -->
+    <section class="section" id="recipes" style="background: var(--cream-deep)">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Stories Our Recipes Carry</span>
+        <h2>The Stories Behind Our Timeless Recipes</h2>
+        <p>
+          Every recipe here has a memory attached to it. Here are a few worth
+          knowing before you eat.
+        </p>
       </div>
-      <div class="loc-card">
-        <h4>Kozhikode</h4>
-        <p>1980's — A Nostalgic Restaurant, Kozhikode, Kerala, India</p>
-      </div>
-      <div class="loc-card">
-        <h4>Meppadi</h4>
-        <p>1980's — A Nostalgic Restaurant, Meppadi, Kerala, India</p>
-      </div>
-      <div class="loc-card">
-        <h4>Bahrain</h4>
-        <p>1980's — A Nostalgic Restaurant, Kingdom of Bahrain</p>
-      </div>
-    </div>
 
-    <div class="contact-side">
-      <h3>Reach Out</h3>
-      <p style="color:var(--ink-soft);">No booking desk here — just call, walk in, or say hello online. Talk to each other, pretend it's 1980's.</p>
-      <div class="contact-links">
-        <a href="tel:+910000000000">☎ &nbsp; +91 00000 00000</a>
-        <a href="https://instagram.com/1980s.restaurant" target="_blank" rel="noopener">◎ &nbsp; @1980s.restaurant</a>
-        <a href="mailto:hello@1980srestaurant.com">✉ &nbsp; hello@1980srestaurant.com</a>
+      <div class="recipe-grid reveal">
+        <article class="recipe-card">
+          <div class="recipe-photo">
+            <img
+              src="images/dish-chattichoru.jpg"
+              alt="Chattichoru"
+              onerror="
+                this.parentElement.innerHTML = '<div class=ph>Chattichoru</div>'
+              "
+            />
+            <span class="recipe-num">01 · Rice &amp; Curries</span>
+          </div>
+          <div class="recipe-body">
+            <h3>Chattichoru</h3>
+            <p>
+              A comforting combination of fragrant rice, soulful curries, and
+              cherished side dishes, brought together in one humble chatti.
+              Rooted in the simple joy of sharing food, every spoonful carries
+              the taste of Kerala's rich culinary heritage.
+            </p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-photo">
+            <img
+              src="images/dish-sadhya.jpg"
+              alt="Sadhya"
+              onerror="
+                this.parentElement.innerHTML = '<div class=ph>Sadhya</div>'
+              "
+            />
+            <span class="recipe-num">02 · The Grand Feast</span>
+          </div>
+          <div class="recipe-body">
+            <h3>Sadhya</h3>
+            <p>
+              A grand feast of Kerala, where every dish is a celebration of
+              tradition, togetherness, and the timeless flavours passed down
+              through generations.
+            </p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-photo">
+            <img
+              src="images/dish-pollichathu.jpg"
+              alt="Fish Pollichathu"
+              onerror="
+                this.parentElement.innerHTML =
+                  '<div class=ph>Fish Pollichathu</div>'
+              "
+            />
+            <span class="recipe-num">03 · From the Malabar Coast</span>
+          </div>
+          <div class="recipe-body">
+            <h3>Fish Pollichathu</h3>
+            <p>
+              A timeless Kerala delicacy — fresh fish wrapped in fragrant banana
+              leaves and gently cooked with aromatic spices, capturing the soul
+              of Malabar in every bite.
+            </p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-photo">
+            <img
+              src="images/dish-biriyani.jpg"
+              alt="Biriyani"
+              onerror="
+                this.parentElement.innerHTML = '<div class=ph>Biriyani</div>'
+              "
+            />
+            <span class="recipe-num">04 · Spice &amp; Slow Fire</span>
+          </div>
+          <div class="recipe-body">
+            <h3>Biriyani</h3>
+            <p>
+              A fragrant celebration of spices, tender meat, and perfectly
+              cooked rice — bringing together generations of flavour in every
+              irresistible bite.
+            </p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-photo">
+            <img
+              src="images/dish-elaada.jpg"
+              alt="Ela Ada"
+              onerror="
+                this.parentElement.innerHTML = '<div class=ph>Ela Ada</div>'
+              "
+            />
+            <span class="recipe-num">05 · Sweet Endings</span>
+          </div>
+          <div class="recipe-body">
+            <h3>Ela Ada</h3>
+            <p>
+              A cherished Kerala sweet, wrapped in tender banana leaves and
+              filled with coconut and jaggery, carrying the comforting taste of
+              tradition in every bite.
+            </p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-photo">
+            <img
+              src="images/dish-pazhampori.jpg"
+              alt="Pazham Pori"
+              onerror="
+                this.parentElement.innerHTML = '<div class=ph>Pazham Pori</div>'
+              "
+            />
+            <span class="recipe-num">06 · Tea-Time Classic</span>
+          </div>
+          <div class="recipe-body">
+            <h3>Pazham Pori</h3>
+            <p>
+              A beloved Kerala tea-time classic, where sweet, ripe bananas meet
+              a golden, crispy batter — evoking the warmth and simplicity of
+              cherished childhood memories.
+            </p>
+          </div>
+        </article>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<footer>
-  <div class="fmark">1980's</div>
-  <div>A Nostalgic Restaurant</div>
-  <div class="fnote">Bahrain · Kalpetta · Kozhikode · Meppadi — © <span id="year"></span> 1980's. We don't have wifi. Talk to each other.</div>
-</footer>
+    <!-- ============ GUEST WALL / TESTIMONIALS ============ -->
+    <section class="section" id="guests">
+      <div class="section-head reveal">
+        <span class="eyebrow">Say Hi</span>
+        <h2>Our Visitors</h2>
+        <p>
+          Familiar faces who stopped by and left a little bit of nostalgia
+          behind.
+        </p>
+      </div>
 
-<script src="js/main.js"></script>
-</body>
+      <div class="guest-strip reveal">
+        <div class="guest-card">
+          <div class="photo">
+            <img
+              src="images/guest-1.jpg"
+              alt="Guest"
+              onerror="
+                this.parentElement.innerHTML =
+                  '<div class=ph>Guest Photo 1</div>'
+              "
+            />
+          </div>
+          <div class="cap">
+            <div class="name">Guest Name</div>
+            <div class="quote">"Felt like coming home."</div>
+          </div>
+        </div>
+        <div class="guest-card">
+          <div class="photo">
+            <img
+              src="images/guest-2.jpg"
+              alt="Guest"
+              onerror="
+                this.parentElement.innerHTML =
+                  '<div class=ph>Guest Photo 2</div>'
+              "
+            />
+          </div>
+          <div class="cap">
+            <div class="name">Guest Name</div>
+            <div class="quote">"Every bite, a memory."</div>
+          </div>
+        </div>
+        <div class="guest-card">
+          <div class="photo">
+            <img
+              src="images/guest-3.jpg"
+              alt="Guest"
+              onerror="
+                this.parentElement.innerHTML =
+                  '<div class=ph>Guest Photo 3</div>'
+              "
+            />
+          </div>
+          <div class="cap">
+            <div class="name">Guest Name</div>
+            <div class="quote">"Good food, good mood."</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section" id="gallery" style="background: var(--cream-deep)">
+      <div class="section-head reveal">
+        <span class="eyebrow">A Look Inside</span>
+        <h2>Gallery</h2>
+        <p>Wood, brass light, banana leaf, and everything in between.</p>
+      </div>
+      <div class="masonry reveal">
+        <div class="tile">
+          <img
+            src="images/gallery-1.jpg"
+            alt=""
+            onerror="
+              this.parentElement.innerHTML =
+                '<div class=ph style=aspect-ratio:4/5>Gallery Photo</div>'
+            "
+          />
+        </div>
+        <div class="tile">
+          <img
+            src="images/gallery-2.jpg"
+            alt=""
+            onerror="
+              this.parentElement.innerHTML =
+                '<div class=ph style=aspect-ratio:1/1>Gallery Photo</div>'
+            "
+          />
+        </div>
+        <div class="tile">
+          <img
+            src="images/gallery-3.jpg"
+            alt=""
+            onerror="
+              this.parentElement.innerHTML =
+                '<div class=ph style=aspect-ratio:3/4>Gallery Photo</div>'
+            "
+          />
+        </div>
+        <div class="tile">
+          <img
+            src="images/gallery-4.jpg"
+            alt=""
+            onerror="
+              this.parentElement.innerHTML =
+                '<div class=ph style=aspect-ratio:4/3>Gallery Photo</div>'
+            "
+          />
+        </div>
+        <div class="tile">
+          <img
+            src="images/gallery-5.jpg"
+            alt=""
+            onerror="
+              this.parentElement.innerHTML =
+                '<div class=ph style=aspect-ratio:1/1>Gallery Photo</div>'
+            "
+          />
+        </div>
+        <div class="tile">
+          <img
+            src="images/gallery-6.jpg"
+            alt=""
+            onerror="
+              this.parentElement.innerHTML =
+                '<div class=ph style=aspect-ratio:4/5>Gallery Photo</div>'
+            "
+          />
+        </div>
+        <div class="tile">
+          <img
+            src="images/gallery-7.jpg"
+            alt=""
+            onerror="
+              this.parentElement.innerHTML =
+                '<div class=ph style=aspect-ratio:3/4>Gallery Photo</div>'
+            "
+          />
+        </div>
+        <div class="tile">
+          <img
+            src="images/gallery-8.jpg"
+            alt=""
+            onerror="
+              this.parentElement.innerHTML =
+                '<div class=ph style=aspect-ratio:4/3>Gallery Photo</div>'
+            "
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section" id="menu">
+      <div class="section-head reveal">
+        <span class="eyebrow">Bhakshana Vilavivarapattika</span>
+        <h2>Our Menu</h2>
+        <p>
+          A menu written the way it always was — no prices, just the promise of
+          good food.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <div class="menu-tabs">
+          <button class="menu-tab active" data-tab="mains">
+            Mains &amp; Rice
+          </button>
+          <button class="menu-tab" data-tab="grills">Grills &amp; Fry</button>
+          <button class="menu-tab" data-tab="breads">Breads &amp; Sides</button>
+          <button class="menu-tab" data-tab="sweets">
+            Tea Time &amp; Sweets
+          </button>
+        </div>
+
+        <div class="menu-panel active" id="mains">
+          <div class="menu-list">
+            <div class="menu-item">
+              <span class="mname">Chattichoru</span
+              ><span class="mtag">Signature</span>
+            </div>
+            <div class="menu-item">
+              <span class="mname">Sadhya</span
+              ><span class="mtag">On Request</span>
+            </div>
+            <div class="menu-item">
+              <span class="mname">Chatti Biriyani</span
+              ><span class="mtag">Today's Special</span>
+            </div>
+            <div class="menu-item">
+              <span class="mname">Pollicha Biriyani</span
+              ><span class="mtag">Today's Special</span>
+            </div>
+            <div class="menu-item">
+              <span class="mname">Chatti Chora</span
+              ><span class="mtag">Today's Special</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="grills">
+          <div class="menu-list">
+            <div class="menu-item">
+              <span class="mname">Fish Pollichathu</span
+              ><span class="mtag">Malabar Coast</span>
+            </div>
+            <div class="menu-item">
+              <span class="mname">Chicken Kanthari</span
+              ><span class="mtag">Today's Special</span>
+            </div>
+            <div class="menu-item">
+              <span class="mname">Chicken Kondattam</span
+              ><span class="mtag">Today's Special</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="breads">
+          <div class="menu-list">
+            <div class="menu-item">
+              <span class="mname">Paal Porotta</span
+              ><span class="mtag">Fresh Baked</span>
+            </div>
+            <div class="menu-item">
+              <span class="mname">Puttu &amp; Pathiri</span
+              ><span class="mtag">Fresh Baked</span>
+            </div>
+            <div class="menu-item">
+              <span class="mname">Kizhi Porotta</span
+              ><span class="mtag">Steamed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="sweets">
+          <div class="menu-list">
+            <div class="menu-item">
+              <span class="mname">Ela Ada</span
+              ><span class="mtag">Banana Leaf Sweet</span>
+            </div>
+            <div class="menu-item">
+              <span class="mname">Pazham Pori</span
+              ><span class="mtag">Tea-Time Classic</span>
+            </div>
+            <div class="menu-item">
+              <span class="mname">1980's Chai</span
+              ><span class="mtag">House Brew</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="menu-note">
+          Full menu available in-house. Ask our staff for today's specials,
+          written fresh on the chalkboard.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" style="background: var(--cream-deep)">
+      <div class="section-head reveal">
+        <span class="eyebrow">Find Us</span>
+        <h2>Come, Sit With Us</h2>
+        <p>Four homes, one memory. Choose the one nearest to you.</p>
+      </div>
+
+      <div class="contact-wrap reveal">
+        <div class="locations">
+          <div class="loc-card">
+            <h4>Kalpetta, Wayanad</h4>
+            <p>1980's — A Nostalgic Restaurant, Kalpetta, Kerala, India</p>
+          </div>
+          <div class="loc-card">
+            <h4>Kozhikode</h4>
+            <p>1980's — A Nostalgic Restaurant, Kozhikode, Kerala, India</p>
+          </div>
+          <div class="loc-card">
+            <h4>Meppadi</h4>
+            <p>1980's — A Nostalgic Restaurant, Meppadi, Kerala, India</p>
+          </div>
+          <div class="loc-card">
+            <h4>Bahrain</h4>
+            <p>1980's — A Nostalgic Restaurant, Kingdom of Bahrain</p>
+          </div>
+        </div>
+
+        <div class="contact-side">
+          <h3>Reach Out</h3>
+          <p style="color: var(--ink-soft)">
+            No booking desk here — just call, walk in, or say hello online. Talk
+            to each other, pretend it's 1980's.
+          </p>
+          <div class="contact-links">
+            <a href="tel:+910000000000">☎ &nbsp; +91 00000 00000</a>
+            <a
+              href="https://instagram.com/1980s.restaurant"
+              target="_blank"
+              rel="noopener"
+              >◎ &nbsp; @1980s.restaurant</a
+            >
+            <a href="mailto:hello@1980srestaurant.com"
+              >✉ &nbsp; hello@1980srestaurant.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="fmark">1980's</div>
+      <div>A Nostalgic Restaurant</div>
+      <div class="fnote">
+        Bahrain · Kalpetta · Kozhikode · Meppadi — ©
+        <span id="year"></span> 1980's. We don't have wifi. Talk to each other.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
